@@ -1,0 +1,65 @@
+@import 'variables'
+@import 'button'
+@import 'mixins'
+@import 'plugins'
+@import 'functions'
+
+.special
+    @include special
+
+h2
+    font-size: 2rem
+
+body
+    margin: 20px
+
+.espacamento-menor
+    @include espacamento(10px,10px)
+    // border: 1px solid green
+    @include custom-border(solid, green)
+    @include colors()
+    @extend %font-pattern
+
+.espacamento-medio
+    @include espacamento(15px,15px)
+    // border: 1px solid blue
+    @include custom-border(solid, blue)
+    @include colors($font-color: #fff,$background: #1a1a1a)
+
+.espacamento-maior
+    @include espacamento(25px,25px)
+    // border: 1px solid red
+    @include custom-border(solid, red)
+
+.espacamento-maior-ainda
+    $padding: 50px
+    $margin: 50px
+    @include espacamento($padding,$margin)
+    // border: 1px solid gold
+    @include custom-border(solid, gold)
+
+$medida: 4 // Variavel Global
+
+.container-menor
+    text-align: center
+    width: 100px * $medida
+    border: custom-border-function()
+
+.container-maior
+    text-align: center
+    width: 100px * $medida
+    border: custom-border-function(2)
+
+.fonte-pequena
+    font-size: 5px
+    color: text-color(5)
+    border: custom-border-function(3)
+    
+
+.fonte-media
+    font-size: 10px
+    color: text-color(10)
+
+.fonte-grande
+    font-size: 15px
+    color: text-color(15)

@@ -1,0 +1,32 @@
+// Escopo Global
+@import 'variables'
+
+.card
+    margin: 20px 0px
+    width: 200px
+    border-radius: 5px
+    padding: 10px 30px
+    background-color: $bg-color-blue
+    // Escopo local
+    $font-color: #fff
+    // Shadowing
+    $border: 5px dotted red
+    border: $border
+    p
+        color: $font-color
+        font-size: $main-font
+        margin: #{$mx + 10px}
+        padding: #{$px + $py}
+
+body
+    background-color: $bg-color
+    color: $text-color
+
+    h1
+        color: $text-color
+
+    p
+        color: $text-color
+
+    a
+        color: $text-color

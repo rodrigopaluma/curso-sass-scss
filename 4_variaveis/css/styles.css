@@ -1,0 +1,30 @@
+.card {
+  margin: 20px 0px;
+  width: 200px;
+  border-radius: 5px;
+  padding: 10px 30px;
+  background-color: #003568;
+  border: 5px dotted red;
+}
+.card p {
+  color: #fff;
+  font-size: 3rem;
+  margin: 12px;
+  padding: 16px;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #1a1a1a;
+}
+body h1 {
+  color: #1a1a1a;
+}
+body p {
+  color: #1a1a1a;
+}
+body a {
+  color: #1a1a1a;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,91 @@
+.btn {
+  background-color: #ddd;
+  color: #1a1a1a;
+  padding: 10px 12px;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.espacamento-menor {
+  font-size: 2rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+}
+
+.special {
+  color: red;
+  background-color: yellow;
+  padding: 10px;
+  border: 3px dotted red;
+}
+.special:hover {
+  color: blue;
+  border-color: blue;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+body {
+  margin: 20px;
+}
+
+.espacamento-menor {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid green;
+  color: #000;
+  background-color: #fff;
+}
+
+.espacamento-medio {
+  padding: 15px;
+  margin: 15px;
+  border: 2px solid blue;
+  color: #fff;
+  background-color: #1a1a1a;
+}
+
+.espacamento-maior {
+  padding: 25px;
+  margin: 25px;
+  border: 2px solid red;
+}
+
+.espacamento-maior-ainda {
+  padding: 50px;
+  margin: 50px;
+  border: 2px solid gold;
+}
+
+.container-menor {
+  text-align: center;
+  width: 400px;
+  border: 1px solid red;
+}
+
+.container-maior {
+  text-align: center;
+  width: 400px;
+  border: 2px solid green;
+}
+
+.fonte-pequena {
+  font-size: 5px;
+  color: blue;
+  border: 3px dotted gold;
+}
+
+.fonte-media {
+  font-size: 10px;
+  color: blue;
+}
+
+.fonte-grande {
+  font-size: 15px;
+  color: red;
+}
+
+/*# sourceMappingURL=styles.css.map */

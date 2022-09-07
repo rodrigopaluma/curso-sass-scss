@@ -1,0 +1,16 @@
+{
+  "name": "curso-sass-scss",
+  "version": "1.0.0",
+  "description": "Curso de SASS e SCSS",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sass",
+    "scss",
+    "css"
+  ],
+  "author": "Rodrigo Paluma <rodrigo.paluma@gmail.com> (https://www.linkedin.com/in/rodrigopaluma/)",
+  "license": "MIT"
+}
