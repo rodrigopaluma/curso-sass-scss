@@ -130,4 +130,19 @@ body {
   line-height: 120px;
 }
 
+.p-1 {
+  color: lightblue;
+  background: #000;
+}
+
+.p-2 {
+  color: lightgreen;
+  background: #000;
+}
+
+.p-3 {
+  color: teal;
+  background: #000;
+}
+
 /*# sourceMappingURL=styles.css.map */
