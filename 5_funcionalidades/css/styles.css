@@ -63,7 +63,7 @@ body {
 .container-menor {
   text-align: center;
   width: 400px;
-  border: 1px solid red;
+  border: 2px solid red;
 }
 
 .container-maior {
@@ -86,6 +86,33 @@ body {
 .fonte-grande {
   font-size: 15px;
   color: red;
+}
+
+.teste-1 {
+  width: 100px;
+  background: red;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.teste-2 {
+  width: 500px;
+  background: green;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.teste-3 {
+  width: 960px;
+  background: blue;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */
