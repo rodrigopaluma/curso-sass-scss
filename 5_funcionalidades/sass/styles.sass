@@ -90,3 +90,10 @@ $medida: 4 // Variavel Global
     text-align: center
     padding: 10px 20px
     border-radius: 5px
+
+$fonts: 40px, 60px, 100px
+
+@each $font in $fonts
+    .title-#{$font}
+        font-size: $font
+        line-height: $font * 1.2
