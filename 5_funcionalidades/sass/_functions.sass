@@ -1,3 +1,5 @@
+@charset 'UTF-8'
+
 @function text-color($size)
 
     $color: #1a1a1a
@@ -12,6 +14,11 @@
 @function custom-border-function($variation: 1)
 
     $border: none
+    $var: 3
+
+    @if $variation > $var
+        // @error 'Insira uma variação válida(até o número 3)'
+        @warn 'Insira uma variação válida(até o número #{$var})'
     
     @if $variation == 1
         $border: 2px solid red
