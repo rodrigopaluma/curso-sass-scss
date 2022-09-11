@@ -3,6 +3,7 @@
 @use 'sass:map'
 @use 'sass:math'
 @use 'sass:meta'
+@use 'sass:string'
 
 $color-adjust: color.adjust(#6b717f, $red: 25)
 $color-adjust-2: color.adjust(#6b717f, $red: 25, $blue: 110)
@@ -134,3 +135,16 @@ $a: 1, 2, 3, 4, 5
 @debug meta.type-of('Uma string') // Retorna o tipo
 @debug meta.type-of($a) // Retorna o tipo
 @debug meta.type-of(#ff9900) // Retorna o tipo
+
+
+$frase: "O rato roeu a roupa do rei de Roma"
+@debug string.index($frase, 'rei') // Retorna a posição da string
+@debug string.index($frase, 'Brasil') // Retorna null caso não exista
+
+@debug string.length($frase) // Retorna a quantidade total de caracteres
+
+@debug string.to-lower-case($frase) // Caixa baixa
+@debug string.to-upper-case($frase) // Caixa alta
+
+@debug string.unique-id() // Retorna um id único
+@debug string.unique-id()
