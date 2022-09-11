@@ -2,6 +2,7 @@
 @use 'sass:list'
 @use 'sass:map'
 @use 'sass:math'
+@use 'sass:meta'
 
 $color-adjust: color.adjust(#6b717f, $red: 25)
 $color-adjust-2: color.adjust(#6b717f, $red: 25, $blue: 110)
@@ -115,3 +116,21 @@ $a: 1, 2, 3, 4, 5
 @debug math.random() // Retorna um aleatório
 
 @debug math.floor(math.random() * 10)
+
+@debug meta.global-variable-exists('a') // Verifica se a variável existe
+@debug meta.global-variable-exists('naoexiste') // Retorna false caso não exista
+
+@debug meta.inspect($a) // Retorna o valor da variável
+
+@mixin test
+    margin: 0
+    padding: 0
+
+@debug meta.mixin-exists('test') // Verifica se existe um mixin
+@debug meta.mixin-exists('testando')
+
+@debug meta.type-of(('asd': 1)) // Retorna o tipo
+@debug meta.type-of(2) // Retorna o tipo
+@debug meta.type-of('Uma string') // Retorna o tipo
+@debug meta.type-of($a) // Retorna o tipo
+@debug meta.type-of(#ff9900) // Retorna o tipo
